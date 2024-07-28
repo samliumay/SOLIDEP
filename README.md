@@ -11,7 +11,7 @@
 * "Always aim for higher cohesion. Helps attain better adherence to the single responsibility princible." So we are basically trying to lower coupling. Increasing the independency betwen the components and increasing the durability.
 * "Ecery software component should have one and only one reason to change."
 
-Robert_C _Martin - Founder of SOLID
+Robert_C Martin - Founder of SOLID
 ![Robert_C _Martin_surrounded_by_computers](https://github.com/user-attachments/assets/12dd5011-0ec6-47b8-ab38-946635971cb0)
 
 ### Example - Single Responsibility Principle
@@ -28,5 +28,24 @@ Robert_C _Martin - Founder of SOLID
 * As you see we needed to change the insureanceCalculationClass to add new feature. So we violated open-close princible. 
 * At our solution, by using the polymorphism trait of OOP, we created a customer profile interface and created two different classes inherits this interface. So with this strategy, we were able to apply open closed princible. 
 
-Bertrand_Meyer - Founder Of Open Closed Princible
+Bertrand Meyer - Founder Of Open Closed Princible
 ![Bertrand_Meyer_recent](https://github.com/user-attachments/assets/f8a61095-f9dc-4579-a1dd-1420fcd03f90)
+
+## Liskov Substitution Princible
+* "Object should be replaceable with their subtypes without affecting the correctness of the program. "
+* We can try to think in a 'IS-A' way:
+  * Hatchback IS A car
+  * Ostrich IS A bird
+  * Gasoline IS A Fuel
+* There is a problem. an Ostrich can not fly. So when you create a bird class, it will probably have a fly method, but Ostrich will not able to use it. So you basically affected the correctness of the subtype.
+* So we need to change the 'IS-A' way of thinking.
+* "If it looks like a duck and quacks lie a duck but it needs baterries, you probably have the wrong abstraction!"
+* "Object should be replacable woth their subtypes without affecting the correctness of the program."
+
+### Example - Liskov Substitution Princible
+* We have a car class with cabin width. But racing cars do not hhave cabin but cockpit. So we do not use the cabinWidth but cockputWidth.
+* As a solution, ew can create a class called Vehicle. And this will get the interior width. You can extend this class to normal car and racing car. So we are able to solve the problem. 
+
+
+Barbara_Liskov - Founder Of Liskov Substitution Princible
+![Barbara_Liskov_MIT_computer_scientist_2010](https://github.com/user-attachments/assets/bf1844e7-96bb-4089-adb2-1986f2f076e0)
