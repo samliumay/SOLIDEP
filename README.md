@@ -10,7 +10,10 @@
 * Basically you can not write a component like a swiss army knife. In the software world, the part that you use to cut the apple have higher chance to cut your hand than an apple. 
 * "Always aim for higher cohesion. Helps attain better adherence to the single responsibility princible." So we are basically trying to lower coupling. Increasing the independency betwen the components and increasing the durability.
 * "Ecery software component should have one and only one reason to change."
+
+
 ![SingleResponsibility](https://github.com/user-attachments/assets/0f447777-6dd0-4204-a731-4893385b7158)
+
 
 ### Example - Single Responsibility Principle
 * Look to the example we give. We have Square class. At the violation example, we are doing the drawing rotation and area calculation directly inside the square class. But for drawing and rotating, we can use a different class. They are independent different operations than sqaure itself. So thats why we created a shapeUI class.
