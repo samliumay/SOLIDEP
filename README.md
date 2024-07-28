@@ -11,9 +11,8 @@
 * "Always aim for higher cohesion. Helps attain better adherence to the single responsibility princible." So we are basically trying to lower coupling. Increasing the independency betwen the components and increasing the durability.
 * "Ecery software component should have one and only one reason to change."
 
-
-![SingleResponsibility](https://github.com/user-attachments/assets/0f447777-6dd0-4204-a731-4893385b7158)
-
+Robert_C _Martin - Founder of SOLID
+![Robert_C _Martin_surrounded_by_computers](https://github.com/user-attachments/assets/12dd5011-0ec6-47b8-ab38-946635971cb0)
 
 ### Example - Single Responsibility Principle
 * Look to the example we give. We have Square class. At the violation example, we are doing the drawing rotation and area calculation directly inside the square class. But for drawing and rotating, we can use a different class. They are independent different operations than sqaure itself. So thats why we created a shapeUI class.
@@ -28,3 +27,6 @@
 * Take a look to our example.  We are creating an insurance calculation system. At the begining we just have health insurance. But at the feature we decided to add vechile insurance either.
 * As you see we needed to change the insureanceCalculationClass to add new feature. So we violated open-close princible. 
 * At our solution, by using the polymorphism trait of OOP, we created a customer profile interface and created two different classes inherits this interface. So with this strategy, we were able to apply open closed princible. 
+
+Bertrand_Meyer - Founder Of Open Closed Princible
+![Bertrand_Meyer_recent](https://github.com/user-attachments/assets/f8a61095-f9dc-4579-a1dd-1420fcd03f90)
