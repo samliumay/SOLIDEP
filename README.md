@@ -11,7 +11,7 @@
 * "Always aim for higher cohesion. Helps attain better adherence to the single responsibility princible." So we are basically trying to lower coupling. Increasing the independency betwen the components and increasing the durability.
 * "Ecery software component should have one and only one reason to change."
 
-Robert_C Martin - Founder of SOLID
+Robert C Martin - Founder of SOLID
 ![Robert_C _Martin_surrounded_by_computers](https://github.com/user-attachments/assets/12dd5011-0ec6-47b8-ab38-946635971cb0)
 
 ### Example - Single Responsibility Principle
@@ -47,5 +47,28 @@ Bertrand Meyer - Founder Of Open Closed Princible
 * As a solution, ew can create a class called Vehicle. And this will get the interior width. You can extend this class to normal car and racing car. So we are able to solve the problem. 
 
 
-Barbara_Liskov - Founder Of Liskov Substitution Princible
+Barbara Liskov - Founder Of Liskov Substitution Princible
 ![Barbara_Liskov_MIT_computer_scientist_2010](https://github.com/user-attachments/assets/bf1844e7-96bb-4089-adb2-1986f2f076e0)
+
+## Interface Segregation Princible
+* "No Client should be forced to depend on methods it does not use."
+* So for example you are tring to model all the machines at the job enviorment. You found a machine called Xerox and this machine has all the abilities. You create an interface basically does everytink. And you use this interface for every other machine at the office. You have other device called HP printer. And you inherited the same class for printerScanner.  When a programmer sees the HP Printer, they will not able to understand HP Printer can not do x that Xerox do.And this will create a huge problem.
+
+### Example - Interface Segregation Princible
+* So we can create different interfaces for every single function we want. For printing, For Scaning and For Faxing. So at the end we were able to differentiate the interfaces between them. 
+
+Robert C Martin - Interface Segregation Princible
+![Robert_C _Martin_surrounded_by_computers](https://github.com/user-attachments/assets/12dd5011-0ec6-47b8-ab38-946635971cb0)
+
+## Dependency Inversion Princible
+* "High-level modules should not depend on low-level modules. Both should depends on abstractions."
+* "Abstraction should not depend on details. Details should depend on abstractions."
+* ProductCatolog -> SQLProductRepository
+  * Right depends on right. So violates the strucutre. 
+
+### Example - Dependency Inversion Princible
+* 
+
+
+Robert C Martin - Dependency Inversion Princible
+![Robert_C _Martin_surrounded_by_computers](https://github.com/user-attachments/assets/12dd5011-0ec6-47b8-ab38-946635971cb0)
